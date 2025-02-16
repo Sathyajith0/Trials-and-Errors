@@ -1,0 +1,27 @@
+##Program: simple list manipulation and operations
+
+numbers = [3,4,6,5]
+numbers.insert(2,10) #Insert at a particular index
+print(numbers)
+numbers.append(25) #insert at the end
+print(numbers)
+x = 5 in numbers #check for a particular number
+print (x)
+numbers.remove(5) #remove a particular number
+print(numbers)
+numbers.pop() #remove last number
+print(numbers)
+print(numbers.index(4)) #get index
+numbers.sort() #sorting it
+print(numbers) 
+numbers2 = numbers.copy() #to copy
+numbers.clear() #clear list
+print(numbers)
+
+#program to remove duplicates on a list
+numbers = [1,4,5,6,6,4,4,8,9,9]
+uniques = []
+for i in numbers:
+    if i not in uniques:
+        uniques.append(i)
+print(uniques)
