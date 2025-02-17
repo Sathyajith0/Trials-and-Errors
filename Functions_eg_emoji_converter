@@ -1,0 +1,19 @@
+
+
+#Getting into functions
+#Function to convert text into an emoji
+
+def emoji_converter(message):
+    words = message.split(" ")
+    emojis = {
+        ":)": "😊",
+        ":(": "😒"
+    }
+    output = ""
+    for word in words:
+        output += emojis.get(word,word) + " "
+    return output
+    
+
+my_message = input(">")
+print (emoji_converter(my_message))
